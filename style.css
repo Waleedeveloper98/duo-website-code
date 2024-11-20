@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.cursor {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #edbfff;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: background-image ease .1s;
+    background-size: cover;
+    transition: left linear .1s top linear .1s;
+}
+
+#purple {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #edbfff;
+    z-index: 100;
+    display: none;
+}
+
+.main {
+    background-color: #0f0d0d;
+    cursor: none;
+}
+
+.page1 {
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 12vw;
+    font-family: PP mori;
+    position: relative;
+    z-index: 9;
+}
+
+/* NAVBAR SECTION  */
+#nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 101;
+    color: white;
+    font-family: pp mori;
+    cursor: pointer;
+    transition: opacity ease .1s;
+}
+
+#nav img {
+    height: 26px;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#nav #circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#nav h4 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#nav h4:nth-child(1) {
+    text-decoration: underline;
+}
+
+/* PAGE 1 HERO TEXT */
+.page1>h1 {
+    font-size: 7vw;
+    font-family: PP mori;
+    font-weight: 300;
+    margin-left: 6vw;
+}
+
+.page1>h2 {
+    font-size: 7vw;
+    font-weight: 300;
+    font-family: PP mori;
+    margin-left: 26vw;
+}
+
+.page1 video {
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* PAGE 2 START */
+.page2 {
+    color: black;
+    min-height: 100vh;
+    width: 100%;
+    font-family: PP mori;
+    padding: 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    position: relative;
+    z-index: 9;
+}
+
+.page2 h1 {
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+.page2-container {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 5vw; */
+}
+
+.page2-left {
+
+    width: 38%;
+}
+
+.page2-right {
+
+    width: 24%;
+}
+
+.page2-left h2 {
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 4vw;
+}
+
+.page2-right p {
+    font-size: 20px;
+}
+
+.page2-right button {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0px;
+    background-color: #edbfff;
+    color: black;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* PAGE 3 START */
+.page3 {
+    font-family: PP mori;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    z-index: 9;
+}
+
+.page3 h1 {
+    font-size: 6.5vw;
+    font-weight: 300;
+    color: black;
+    margin-left: 100px;
+
+}
+
+.page3-part1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.page3-part1 img {
+    height: 350px;
+    margin-top: 140px;
+}
+
+.page3-part1 video {
+    height: 300px;
+}
+
+/* PAGE 4 START */
+.page4 {
+    font-family: PP mori;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 100px 60px;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.elem h1 {
+    font-size: 7vw;
+    color: white;
+    transition: all ease-out .5s;
+}
+
+.text-div {
+    height: 83px;
+    overflow: hidden;
+}
+
+.elem img {
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out .5s;
+    transform: translateY(10%) rotate(2deg);
+
+}
+
+.elem img:nth-child(1) {
+    left: 0;
+    width: 350px;
+}
+
+.elem img:nth-child(3) {
+    right: 9.5%;
+    width: 250px;
+}
+
+.elem:hover h1 {
+    transform: translateY(-100%);
+    color: #edbfff;
+}
+
+.elem:hover img {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+
+}
+
+/* PAGE 5 START */
+.page5 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    color: white;
+    position: relative;
+    z-index: 9;
+    padding: 120px 90px;
+}
+
+.page5 h2 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: PP mori;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.box {
+    font-family: PP mori;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+
+.box:nth-last-child(1) {
+    border-bottom: 2px solid #dadada;
+}
+
+/* FOOTER START */
+footer {
+    height: 90vh;
+    width: 100%;
+    background-color: #edbfff;
+}
